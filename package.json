@@ -1,0 +1,37 @@
+{
+  "name": "schoolmanagement",
+  "version": "1.0.0",
+  "description": "nodejs api for school management mobile",
+  "main": "Run/main.js",
+  "author": "hr arnob",
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/joi": "^15.0.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "helmet": "^3.18.0",
+    "jsonwebtoken": "^8.5.1",
+    "method-override": "^3.0.0",
+    "morgan": "^1.9.1",
+    "mysql2": "^1.6.5",
+    "password-hash": "^1.2.2",
+    "path": "^0.12.7",
+    "sequelize": "^5.8.12",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-register": "^6.26.0",
+    "nodemon": "^1.19.1"
+  },
+  "scripts": {
+    "start:dev": "set DEBUG=* & npm run serve",
+    "serve": "babel-node Run/main.js",
+    "start": "npm install && npm run serve"
+  }
+}

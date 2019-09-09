@@ -1,0 +1,9 @@
+require("@babel/register");
+const path = require('path');
+
+module.exports = {
+    "config": path.resolve('App/Config', 'sequelize.json'),
+    "models-path": path.resolve('App/Models'),
+    "seeders-path": path.resolve('App/Seeders'),
+    "migrations-path": path.resolve('App/Migrations')
+};
